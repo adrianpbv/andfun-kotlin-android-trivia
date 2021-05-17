@@ -26,16 +26,16 @@ class TitleFragment : Fragment() {
         val binding: FragmentTitleBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_title, container, false)
 
-        binding.playButton.setOnClickListener{
-            Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment)
-        }
-
-//        binding.playButton.setOnClickListener{ view: View -> //passing an anonymous function into
-//                                                            // the setOnClickListener
-//            //Navigation.findNavController(view).navigate(R.id.action_titleFragment_to_gameFragment)
-//            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment) //KTX extension function for Android view class
-//
+//        binding.playButton.setOnClickListener{
+//            Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment)
 //        }
+//
+        binding.playButton.setOnClickListener{ view: View -> //passing an anonymous function into
+                                                            // the setOnClickListener
+            //Navigation.findNavController(view).navigate(R.id.action_titleFragment_to_gameFragment)
+            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment) //KTX extension function for Android view class
+
+        }
         return binding.root
     }
 
