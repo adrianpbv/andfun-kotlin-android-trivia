@@ -32,7 +32,8 @@ class TitleFragment : Fragment() {
         binding.playButton.setOnClickListener{ view: View -> //passing an anonymous function into
                                                             // the setOnClickListener
             //Navigation.findNavController(view).navigate(R.id.action_titleFragment_to_gameFragment)
-            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment) //KTX extension function for Android view class
+            //view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment) //KTX extension function for Android view class
+            view.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
 
         }
         setHasOptionsMenu(true) //tells android to put a menu

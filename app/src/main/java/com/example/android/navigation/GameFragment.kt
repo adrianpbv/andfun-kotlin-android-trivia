@@ -98,11 +98,16 @@ class GameFragment : Fragment() {
                         binding.invalidateAll() //update the data in the UI
                     } else {
                         // We've won!  Navigate to the gameWonFragment.
-                        view.findNavController().navigate(R.id.action_gameFragment_to_gameWonFragment)
+                        //view.findNavController().navigate(R.id.action_gameFragment_to_gameWonFragment)
+                        view.findNavController().navigate(
+                            GameFragmentDirections.actionGameFragmentToGameWonFragment(numQuestions, questionIndex)) //SafeArgs
+                            // despues de poner los argumentos en el fragment game_won ahi que pasarlos aqui pq no tienen
+                            //valores por default.
                     }
                 } else {
                     // Game over! A wrong answer sends us to the gameOverFragment.
-                    view.findNavController().navigate(R.id.action_gameFragment_to_gameOverFragment2)
+                    //view.findNavController().navigate(R.id.action_gameFragment_to_gameOverFragment2)
+                    view.findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameOverFragment2())
                 }
             }
         }
