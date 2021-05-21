@@ -22,4 +22,6 @@
         android:fromYDelta="0%"
         android:toXDelta="0%"
         android:toYDelta="0%" />
+    <!-- slide horizontally from the right to the left
+    For the Y axis, we’ll be at 0 (onscreen) at the start and end of the animation -->
 </set>

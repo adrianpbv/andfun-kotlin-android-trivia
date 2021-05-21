@@ -22,4 +22,5 @@
         android:fromYDelta="0%"
         android:toXDelta="-100%"
         android:toYDelta="0%" />
+    <!-- slide horizontally towards the left -->
 </set>

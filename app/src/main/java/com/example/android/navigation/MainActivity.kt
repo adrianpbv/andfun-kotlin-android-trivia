@@ -41,8 +41,8 @@ class MainActivity : AppCompatActivity() {
 
         NavigationUI.setupActionBarWithNavController(this, navController, drawerlayout)
 
-        // prevent nav gesture if not on start destination,
         // this is the navigation listener that gets called whenever the destination changes
+        // prevent nav gesture if not on start destination
         navController.addOnDestinationChangedListener { nc: NavController, nd: NavDestination, args: Bundle? ->
             if (nd.id == nc.graph.startDestination) {
                 drawerlayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED) //you can swipe

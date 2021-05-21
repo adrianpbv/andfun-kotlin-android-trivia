@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate
+        android:duration="@android:integer/config_shortAnimTime"
+        android:fromXDelta="-100%"
+        android:fromYDelta="0%"
+        android:toXDelta="0%"
+        android:toYDelta="0%"/>
+    <!-- Since we are going to slide it from the left use fromXDelta -100%
+      fromYDelta 0% keep it stable vertically and from the other sides keep it stable as well-->
+</set>

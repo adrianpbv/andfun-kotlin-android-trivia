@@ -19,4 +19,5 @@
         android:duration="@android:integer/config_mediumAnimTime"
         android:fromAlpha="1.0"
         android:toAlpha="0.0" />
+    <!-- from opaque to invisible -->
 </set>
